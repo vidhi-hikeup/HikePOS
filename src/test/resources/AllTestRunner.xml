@@ -20,11 +20,11 @@
         </groups>
         <classes>
 
-            <class name="UsersTS.UsersTS.UsersTC">
-                <methods>
-                    <include name="d_UserDeactivation_112"/>
-                </methods>
-            </class>
+           <class name="LoginTS.LoginTC">
+               <methods>
+                   <include name="a_verifyLoginFunctionalitydynamic_05"/>
+               </methods>
+           </class>
 
             <!-- <class name="CreateStoreTS.CreateStoreTC"/>
              <class name="DashboardTS.DashboardTC"/>
