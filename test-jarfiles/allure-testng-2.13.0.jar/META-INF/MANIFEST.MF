@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: allure-testng
+Automatic-Module-Name: io.qameta.allure.testng
+Implementation-Version: 2.13.0
+
