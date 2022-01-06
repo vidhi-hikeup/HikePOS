@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="460618" started-at="2021-02-11T11:57:33Z" finished-at="2021-02-11T12:05:13Z">
+    <groups>
+      <group name="Point Of Sale">
+        <method signature="ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+        <method signature="ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+      </group> <!-- Point Of Sale -->
+      <group name="HIKE-POS">
+        <method signature="LoginTC.a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff]" name="a_verifyLoginFunctionality_03" class="LoginTS.LoginTC"/>
+        <method signature="ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+        <method signature="ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+      </group> <!-- HIKE-POS -->
+      <group name="Log In">
+        <method signature="LoginTC.a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff]" name="a_verifyLoginFunctionality_03" class="LoginTS.LoginTC"/>
+      </group> <!-- Log In -->
+      <group name="https://my.hikeup.com/">
+        <method signature="LoginTC.a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff]" name="a_verifyLoginFunctionality_03" class="LoginTS.LoginTC"/>
+        <method signature="ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+        <method signature="ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+      </group> <!-- https://my.hikeup.com/ -->
+      <group name="Core">
+        <method signature="LoginTC.a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff]" name="a_verifyLoginFunctionality_03" class="LoginTS.LoginTC"/>
+        <method signature="ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+        <method signature="ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22" class="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+      </group> <!-- Core -->
+    </groups>
+    <test name="Hike POS Test Automation" duration-ms="460618" started-at="2021-02-11T11:57:33Z" finished-at="2021-02-11T12:05:13Z">
+      <class name="LoginTS.LoginTC">
+        <test-method status="PASS" signature="launchBrowser(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:LoginTS.LoginTC@9cd25ff]" name="launchBrowser" is-config="true" duration-ms="18637" started-at="2021-02-11T11:57:14Z" finished-at="2021-02-11T11:57:33Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://my.hikeup.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:LoginTS.LoginTC@9cd25ff]" name="beforeMethod" is-config="true" duration-ms="319" started-at="2021-02-11T11:57:33Z" finished-at="2021-02-11T11:57:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void LoginTS.LoginTC.a_verifyLoginFunctionality_03() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff]" name="a_verifyLoginFunctionality_03" duration-ms="93207" started-at="2021-02-11T11:57:33Z" description="HIKE-03 : Verify login Functionality" finished-at="2021-02-11T11:59:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_verifyLoginFunctionality_03 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:LoginTS.LoginTC@9cd25ff]" name="afterMethod" is-config="true" duration-ms="1002" started-at="2021-02-11T11:59:06Z" finished-at="2021-02-11T11:59:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=a_verifyLoginFunctionality_03 status=SUCCESS method=LoginTC.a_verifyLoginFunctionality_03()[pri:1, instance:LoginTS.LoginTC@9cd25ff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite(java.lang.String)[pri:0, instance:LoginTS.LoginTC@9cd25ff]" name="afterSuite" is-config="true" duration-ms="1137" started-at="2021-02-11T12:05:13Z" finished-at="2021-02-11T12:05:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- LoginTS.LoginTC -->
+      <class name="PointofSaleTS.ProcessSaleTS.ProcessSaleTC">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-02-11T11:59:07Z" finished-at="2021-02-11T11:59:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void PointofSaleTS.ProcessSaleTS.ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19() throws java.io.IOException,org.sikuli.script.FindFailed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19" duration-ms="180758" started-at="2021-02-11T11:59:07Z" description="HIKE-19 : Sale newly created composite product and reviews the sale entry under product history and reporting side. Please check overall flow" finished-at="2021-02-11T12:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="afterMethod" is-config="true" duration-ms="156" started-at="2021-02-11T12:02:08Z" finished-at="2021-02-11T12:02:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19 status=SUCCESS method=ProcessSaleTC.c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-02-11T12:02:08Z" finished-at="2021-02-11T12:02:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void PointofSaleTS.ProcessSaleTS.ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22() throws java.io.IOException,org.sikuli.script.FindFailed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22" duration-ms="184806" started-at="2021-02-11T12:02:08Z" description="HIKE-22 : Sale newly created unity of measure product and review the product history and reporting side." finished-at="2021-02-11T12:05:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb]" name="afterMethod" is-config="true" duration-ms="83" started-at="2021-02-11T12:05:13Z" finished-at="2021-02-11T12:05:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22 status=SUCCESS method=ProcessSaleTC.d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22()[pri:1, instance:PointofSaleTS.ProcessSaleTS.ProcessSaleTC@2de366bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- PointofSaleTS.ProcessSaleTS.ProcessSaleTC -->
+    </test> <!-- Hike POS Test Automation -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>

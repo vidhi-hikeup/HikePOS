@@ -1,0 +1,11 @@
+image: node:latest
+
+stages:
+  - build
+
+build:
+  stage: build
+  script: 
+    - echo "Building the app"
+    - echo "Calling npm "
+    - npm update

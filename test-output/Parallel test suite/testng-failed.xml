@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="tests">
+  <parameter name="headless" value="false"/>
+  <parameter name="baseURL" value="https://my.hikeup.com/"/>
+  <parameter name="mailconfigenabled" value="false"/>
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="1" name="Hike POS Test Automation(failed)" parallel="tests">
+    <classes>
+      <class name="LoginTS.LoginTC">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="a_verifyLoginFunctionality_03"/>
+          <include name="launchBrowser"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- LoginTS.LoginTC -->
+      <class name="PointofSaleTS.ProcessSaleTS.ProcessSaleTC">
+        <methods>
+          <include name="d_saleUnitOfMeasureProductAndVerifyInSaleHistoryAndReportingSide_22"/>
+          <include name="beforeMethod"/>
+          <include name="c_saleCompositeProductAndVerifyInSaleHistoryAndReportingSide_19"/>
+          <include name="launchBrowser"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- PointofSaleTS.ProcessSaleTS.ProcessSaleTC -->
+    </classes>
+  </test> <!-- Hike POS Test Automation(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
