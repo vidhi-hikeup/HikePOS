@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="tests" thread-count="1">
+    <parameter name="browserName" value="chrome"/>
+    <!-- <parameter name="browserName" value="firefox"/>
+     <parameter name="browserName" value="edge"/>
+     <parameter name="browserName" value="opera"/>-->
+    <!--<parameter name="baseURL" value="https://asy.io:82/"/>-->
+<!--
+    <parameter name="baseURL" value="https://hconnect.hikeup.com/"/>
+-->
+    <parameter name="baseURL" value="https://my.hikeup.com/"/>
+    <parameter name="mailconfigenabled" value="false"/>
+    <parameter name="headless" value="false"/>
+    <test name="Hike POS Test Automation">
+         <groups>
+             <run>
+                 <include name="Core"/>
+             </run>
+
+        </groups>
+        <classes>
+
+            <class name="UsersTS.UsersTS.UsersTC">
+                <methods>
+                    <include name="d_UserDeactivation_112"/>
+                </methods>
+            </class>
+
+            <!-- <class name="CreateStoreTS.CreateStoreTC"/>
+             <class name="DashboardTS.DashboardTC"/>
+             <class name="ForgotPasswordTS.ForgotPasswordTC"/>
+             <class name="StoreSetupTS.OutletsAndRegistersTS.OutletsAndRegistersTC"/>
+             <class name="PointofSaleTS.CashRegisterTS.CashRegisterTC"/>
+             <class name="ClockInOutTS.ClockInOutTC"/>
+             <class name="ChangePasswordTS.ChangePasswordTC"/>
+             <class name="CustomersTS.CustomersTS.CustomersTC"/>
+             <class name="InventoryTS.BackorderTS.BackorderTC"/>
+             <class name="InventoryTS.MyInventoryTS.MyInventoryTC"/>
+             <class name="ReportingTS.CustomReportsTS.CustomReportsTC"/>
+             <class name="ReportingTS.SalesTS.SalesTC"/>
+             <class name="ReportingTS.PaymentsTS.PaymentsTC"/>
+             <class name="ReportingTS.UsersTS.UserTC"/>
+             <class name="ProductsTS.ProductsTS.ProductsTC"/>
+             <class name="StoreSetupTS.PaymentTypesTS.PaymentTypesTC"/>
+             <class name="ProductsTS.ProductTypeTS.ProductTypeTC"/>
+             <class name="StoreSetupTS.GeneralTS.GeneralTC"/>
+             <class name="StoreSetupTS.GeneralTS.GeneralTC1"/>
+             <class name="StoreSetupTS.MyAccountTS.MyAccountTC"/>
+             <class name="PointofSaleTS.ProcessSaleTS.ProcessSaleTC"/>
+             <class name="StoreSetupTS.TaxRulesTS.TaxRulesTC"/>
+             <class name="CustomersTS.GroupsTS.GroupsTC"/>
+             <class name="ProductsTS.DiscountOffersTS.DiscountOffersTC"/>
+             <class name="UsersTS.UsersTS.UsersTC"/>
+             <class name="UsersTS.RosterTS.RosterTC"/>
+             <class name="SwitchUserTS.SwitchUserTC"/>
+             <class name="InventoryTS.PurchasesTS.PurchasesTC"/>
+             <class name="InventoryTS.TransfersTS.TransfersTC"/>
+             <class name="LockScreenTS.LockScreenTC"/>
+             <class name="ChangePINTS.ChangePINTC"/>
+             <class name="StoreSetupTS.EmailTemplatesTS.EmailTemplatesTC"/>
+             <class name="UsersTS.UsersTS.UsersOutletVisibilityTC"/>
+             <class name="StoreSetupTS.MyAccountTS.MyAccountTC"/>
+             <class name="StoreSetupTS.GeneralTS.GeneralTC2"/>
+             <class name="StoreSetupTS.SubscriptionPlanTS.SubscriptionPlanTC"/>-->
+
+        </classes>
+    </test>
+</suite>

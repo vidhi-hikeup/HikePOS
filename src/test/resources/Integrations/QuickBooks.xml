@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="1">
+    <parameter name="browserName" value="chrome"/>
+    <!-- <parameter name="browserName" value="firefox"/>
+     <parameter name="browserName" value="edge"/>
+     <parameter name="browserName" value="opera"/>-->
+    <!--<parameter name="baseURL" value="https://asy.io:82/"/>-->
+    <parameter name="baseURL" value="https://hconnect.hikeup.com/"/>
+<!--
+    <parameter name="baseURL" value="https://my.hikeup.com/"/>
+-->
+    <parameter name="mailconfigenabled" value="false"/>
+    <parameter name="headless" value="false"/>
+    <test name="Hike POS Test Automation">
+<!--
+         <groups>
+             <run>
+                 <include name="Core"/>
+             </run>
+         </groups>
+-->
+
+        <classes>
+            <class name="LoginTS.LoginTC">
+                <methods>
+                    <include name="a_verifyLoginFunctionality_03"/>
+                </methods>
+            </class>
+            <class name="IntegrationsTS.QuickBooksTS.QuickBooksTC">
+                <!--<methods>
+                    <include name="shoptfyIntegrations01_69"/>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

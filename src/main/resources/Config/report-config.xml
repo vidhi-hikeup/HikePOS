@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>standard</theme>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>Hike Automation Test Report</documentTitle>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName>
+            <img id="test">
+            <![CDATA[
+            <a href='https://hikeup.com/in/' target='_blank'>
+                <img src='https://raw.githubusercontent.com/vidhi-hikeup/image/main/hike.png' width='90' height='45'/>
+            </a>
+            ]]>
+            </img>
+        </reportName>
+
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline></reportHeadline>
+
+        <!-- global date format override -->
+        <!-- defaults to yyyy-MM-dd -->
+        <dateFormat>dd-MMM-yyyy</dateFormat>
+
+        <!-- global time format override -->
+        <!-- defaults to HH:mm:ss -->
+        <timeFormat>HH:mm:ss</timeFormat>
+
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+	               $('.logo-content').hide();
+	               $('.logo-container').html('Test Report');
+                   document.querySelector('.logo-container').className = 'logo-container';
+                   var col=document.querySelector('.logo-container');
+                   col.style.backgroundColor='#2bbdb9';
+                   $('img').css('margin-top', '1px');
+                   var x = document.querySelectorAll('.nav-right li');
+				           for (let i = 0; i < x.length; i++) {
+  				   		      x[i].style.borderLeftColor = "#2bbdb9";
+				           }
+                });
+            ]]>
+        </scripts>
+
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+
+        ]]>
+        </styles>
+    </configuration>
+</extentreports>
